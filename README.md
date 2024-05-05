@@ -1,4 +1,4 @@
-# H1 Darknet Diaries Podcast Download Tool
+# Darknet Diaries Podcast Download Tool
 
 Manage your Darknet Diaries podcasts with a quick simple python tool. If the Darknet Diaries is the only podcast you listen to than this tool is for you. No more cumbersome apps, no more bloated players.
 
