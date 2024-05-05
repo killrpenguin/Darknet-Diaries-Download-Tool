@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Darknet Diaries Download Tool"
+description = "A command line tool for gathering and managing podcasts from the popular podcast Darknet Diaries."
+readme = "README.md"
+license = {text = "MIT License"}
+version = "1.0.0"
+requires-python = ">=3.10"
+authors = [
+  {name = "David"}
+]
+keywords = ["Podcasts", "tools", "Multimedia", "Sound/Audio",]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Operating System :: Windows",
+    "Operating System :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio", 
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+"Homepage" = "www.github.com/mygithub"
+"Documentation" = ""
+"Darknet Diaries" = "https://darknetdiaries.com/"
+"Donate to Darknet Diaries" = "https://darknetdiaries.com/donate/"
+
+
+[tool.yapfignore]
+ignore_patterns = []
+
+[tool.yapf]
+based_on_style = "pep8"
+spaces_before_comment = 4
+split_before_logical_operator = true
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["src*"]
+exclude = ["tests*"]
+
